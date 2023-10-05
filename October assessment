@@ -1,0 +1,47 @@
+#Question 1
+#Student name = Jack Spratt
+
+#Question A
+taylorSwiftSongs= []
+taylorSwiftSongs =("Love Story" , "Shake It Off" , "Delicate" , "Wildest Dreams" , "All too well" , "Blank Space" , "Bad Blood" , "You Belong With Me" , "Red" , "22")
+#answer is list all the taylor swift songs from the sheet in a list
+
+#Qustion B
+bang = input("Please enter a Taylor Swift song")
+if bang == taylorSwiftSongs:
+    print("That song is in the list!!!!")
+
+
+#Question C
+if bang == taylorSwiftSongs.index(bang):
+    print("The song",bang,
+
+
+
+
+
+
+
+
+
+
+
+
+#Question 2
+#Student name = Jack Spratt
+
+#Question 1
+print("Welcome to Tempreture Alert System")
+
+#Question 2
+deg = input("Please enter a tempreture value in degrees Celsius:")
+
+#Question 3
+if deg == (">20"):
+    print("Too cold.Turn up the heating")
+    
+if deg == ("<20>24"):
+    print("Tempreture is just right")
+    
+if deg == ("<24"):
+    print("Too warm.Turn down the heating.")
