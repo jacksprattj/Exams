@@ -1,0 +1,22 @@
+#Student Name = Jack Spratt
+name = input("Please enter your name:") #(ii)asking the user what is their name at the start of the code
+
+print("Hello" ,name) #(iii)
+print("Welcome to the addition and subtratcion calculator") #(iii)
+       
+
+
+num1 = 9
+num2 = 5
+
+print('Do you want me to (a)dd or (s)ubtract?') #(i)This calculator can only add and subtract
+choice = input()
+
+num1 = int(input("Enter the first number:"))
+num2 = int(input("Enter the second number:"))
+
+if choice == 'a':
+    print (num1 + num2)
+elif choice == 's':
+    print (num1 - num2)
+    
