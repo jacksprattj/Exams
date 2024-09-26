@@ -1,0 +1,81 @@
+# Question 1 (A)
+# Student name: Jack Spratt
+print("This program can find the permimeter or area of a qualiateral.")#(i)
+
+length = float(input("Please enter a length: "))#(iii)
+width = float(input("Please enter a width: "))#(iii)
+
+name = input("Please enter your name: ")#(ii)
+choice = input("Dou you want to find the (p)erimeter or (a)rea? ")
+if choice == "p":
+    perim=(2 * length) + (2 * width)#(vi)
+    Two = (round(perim,2))#(iv)
+    print("A quadilateral with a length of",length,"and a width of",width,"has a perimeter of:",(round(perim,2)))#(v)
+    
+elif choice == "a":
+    area=(length*width)
+    two = (round(area,2))#(iv)
+    print("A quadilateral with a length of",length,"and a width of",width,"has an area of:",(round(area,2)))#(v)
+
+
+    
+print("Thank you for using this program",name)#(ii)
+
+
+# Question 1 (b)
+# Student name: Jack Spratt
+
+import random
+
+play = input("Enter rock, paper or scissors: ")#(i)
+print("Player chose:",play,)#(i)
+
+
+computer_options = ["Rock", "Paper","Scissors"]
+
+computer_choice = computer_options [random.randint(0,2)]
+print("Computer chose:",computer_choice,)#(i)
+
+if play == "rock" and computer_choice == "Paper":#(ii)
+    print("Computer wins")
+    
+elif play == "paper" and computer_choice == "Rock":#(ii)
+    print("Player wins")
+    
+elif play == "scissors" and computer_choice == "Rock":#(ii)
+    print("Computer wins")
+    
+elif play == "rock" and computer_choice == "scissors":#(ii)
+    print("Player wins")
+    
+elif play == "paper" and computer_choice == "scissors":#(ii)
+    print("Computer wins")
+    
+elif play == "scissors" and computer_choice == "paper":#(ii)
+    print("player wins")
+    
+else:
+    print("Draw!")#(ii)
+
+
+
+
+
+# Question 2
+#Student name:Jack Spratt
+
+VIP = int(input("Please enter the number of VIP tickets sold: "))
+
+reg= int(input("Please enter the number of Regular tickets sold: "))
+
+budge = int(input("Please enter the number of Budget tickets sold: "))
+
+vip_ticket = 150
+regular_ticket = 75
+budget_ticket = 40
+
+v = (vip_ticket * VIP)
+r = (regular_ticket*reg)
+b = (budget_ticket*budge)
+
+print("The total number of revenue from ticket sales is",v + r + b)
