@@ -1,0 +1,45 @@
+#Question 1
+#Name : Jack Spratt
+from random import choice
+
+fruits = ['apple' , 'cherry' , 'orange']
+
+random_fruit_1 = choice(fruits)
+print("Random fruit 1: ",random_fruit_1,)#(i)
+
+random_fruit_2 = choice(fruits)
+print("Random fruit 2: ",random_fruit_2,)#(ii)
+
+random_fruit_3 = choice(fruits)
+print("Random fruit 3: " ,random_fruit_3,)#(ii)
+
+print("First fruit is " , random_fruit_1,)#(iii)
+
+if random_fruit_1 == random_fruit_2:#(iv)
+    print("First pair match")
+    
+if random_fruit_1 and random_fruit_2 == "cherry":#(v)
+    print("First pair are cherries")
+    
+elif random_fruit_1 == random_fruit_2 or random_fruit_2 == random_fruit_3 or random_fruit_1 == random_fruit_3:#(vi)
+    print("Matching pair")
+    
+random_fruits = [] #(vii)
+for i in range (100):
+    random_fruit = choice(fruits)
+    random_fruits.append(random_fruit) 
+for i in range(len(fruits)):
+    print(fruits[i], random_fruits.count(fruits[i]))
+
+
+
+
+#Question 2
+#Name : Jack Spratt
+print("Split Bill Calculator")
+
+total_bill = float(input("How much is the bill?: "))
+num_people = int(input("How many people?: "))
+
+amount_per_person = total_bill / num_people
+print("You each owe",amount_per_person)
